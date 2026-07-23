@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Project Horizon</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="viewer"></div>
+
+  <header class="topbar">
+    <button id="menuBtn" class="round-btn" aria-label="Open scenes">☰</button>
+    <div class="title-card">
+      <strong id="projectTitle">Project Horizon</strong>
+      <span id="sceneTitle">Scene 1</span>
+    </div>
+    <div class="top-actions">
+      <button id="infoBtn" class="round-btn" aria-label="Project information">i</button>
+      <button id="fullBtn" class="round-btn" aria-label="Fullscreen">⛶</button>
+    </div>
+  </header>
+
+  <aside id="drawer" class="drawer">
+    <div class="drawer-head">
+      <strong>Scenes</strong>
+      <button id="drawerClose">×</button>
+    </div>
+    <div id="drawerScenes" class="drawer-scenes"></div>
+  </aside>
+  <div id="backdrop" class="backdrop"></div>
+
+  <section id="infoPanel" class="info-panel">
+    <button id="infoClose">×</button>
+    <h1 id="infoTitle">Project Horizon</h1>
+    <p id="infoDescription">Interactive architectural panorama tour.</p>
+  </section>
+
+  <div class="viewer-controls">
+    <button id="zoomIn">+</button>
+    <button id="zoomOut">−</button>
+    <button id="rotateBtn">↻</button>
+  </div>
+
+  <section class="thumb-shell">
+    <button id="prevThumb" class="thumb-arrow">‹</button>
+    <div id="thumbStrip" class="thumb-strip"></div>
+    <button id="nextThumb" class="thumb-arrow">›</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <script src="js/tour-config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Optional: add scene-1.jpg and scene-2.jpg thumbnails here. If missing, the panorama files are used.
