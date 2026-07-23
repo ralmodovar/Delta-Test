@@ -1,25 +1,27 @@
-VIRTUAL TOUR TEMPLATE - FIXED
+KUULA-STYLE HOTSPOT TEMPLATE
 
-1. Copy your two panorama images into the panoramas folder.
-2. Rename them exactly:
+This version uses a white, concentric circular navigation hotspot matching the screenshot reference.
+
+Before uploading:
+1. Put your panorama files in the panoramas folder.
+2. Rename them:
    scene-1.png
    scene-2.png
 
-The folder must contain:
-index.html
-css/style.css
-js/app.js
-panoramas/scene-1.png
-panoramas/scene-2.png
+Upload these items to the ROOT of your GitHub repository:
+- index.html
+- css
+- js
+- panoramas
 
-GITHUB UPLOAD:
-- Open the extracted folder.
-- Select index.html AND all three folders: css, js, panoramas.
-- Drag them onto the GitHub upload page.
-- Confirm GitHub lists index.html, css/style.css, js/app.js, and both panorama files.
-- Commit directly to main.
-- Go to Settings > Pages.
-- Select Deploy from a branch, main, /(root), then Save.
+To move the hotspot:
+Open js/app.js and change:
+- pitch = vertical position
+- yaw = horizontal position
 
-The live URL should be:
-https://ralmodovar.github.io/Delta-Test/
+Example:
+pitch: -5,
+yaw: 35
+
+Positive yaw moves right; negative yaw moves left.
+Positive pitch moves up; negative pitch moves down.
