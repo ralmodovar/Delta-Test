@@ -1,1 +1,0 @@
-Copy scene-1.png and scene-2.png into this folder.
